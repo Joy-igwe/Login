@@ -1,0 +1,94 @@
+
+:root{
+  --bg:#f3f6fb;
+  --card:#fff;
+  --accent:#2563eb;
+  --text:#0f172a;
+  --muted:#64748b;
+  --radius:10px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+/* Page container and card */
+main{
+  width:100%;
+  max-width:420px;
+}
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:0 8px 30px rgba(2,6,23,0.08);
+  padding:28px;
+}
+
+/* Heading */
+h1{
+  margin:0 0 12px;
+  font-size:20px;
+  line-height:1.2;
+}
+.lead{margin:0 0 18px;color:var(--muted)}
+
+/* Form layout */
+form > div{margin-bottom:14px}
+label{
+  display:block;
+  font-size:13px;
+  margin-bottom:6px;
+  color:var(--text);
+}
+input[type="email"],
+input[type="password"]{
+  width:100%;
+  padding:10px 12px;
+  font-size:15px;
+  border:1px solid #e6eef8;
+  border-radius:8px;
+  background:#fff;
+  color:var(--text);
+  outline:none;
+}
+
+/* Focus and accessibility */
+input:focus{
+  box-shadow:0 0 0 4px rgba(37,99,235,0.08);
+  border-color:var(--accent);
+}
+
+/* Button */
+button[type="submit"]{
+  width:100%;
+  padding:10px 12px;
+  background:var(--accent);
+  color:#fff;
+  border:0;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  font-size:15px;
+}
+button[type="submit"]:hover{filter:brightness(0.96)}
+button[type="submit"]:active{transform:translateY(1px)}
+
+/* Small screens */
+@media (max-width:420px){
+  .card{padding:20px}
+}
+
+/* Utility */
+.muted{color:var(--muted);font-size:13px}
+
+.text-align-center{text-align:center}
