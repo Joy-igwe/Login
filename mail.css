@@ -23,7 +23,23 @@ body {
     justify-content: center;
     min-height: 100vh;
     color: var(--text);
+    font-size: 24px;
+    margin-bottom: 16px;
 }
+
+main{
+  width:100%;
+  max-width:420px;
+}
+
+
+h1{
+margin-bottom: 12px;
+  font-size:20px;
+  line-height: 1.2;
+ 
+}
+
 
 form {
     width: 100%;
