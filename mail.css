@@ -65,6 +65,7 @@ label {
 input[type="email"],
 input[type="text"],
 input[type="password"],
+input[type="number"],
 textarea {
     width: 100%;
     padding: 10px 12px;
@@ -75,6 +76,11 @@ textarea {
     color: var(--text);
     outline: none;
     font-family: inherit;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
 }
 
 textarea {
